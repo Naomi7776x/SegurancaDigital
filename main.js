@@ -37,7 +37,7 @@ function geraSenha(){
     let alfabeto = '';
 
     if (checkbox[0].checked){
-        alfabeto += letrasMaiusculas;
+        alfabeto += letrasMaiusculas
     }
     if (checkbox[1].checked){
         alfabeto += letrasMinusculas;
@@ -59,8 +59,13 @@ function geraSenha(){
         let numeroAleatorio = Math.floor(Math.random() * alfabeto.length);
         senha += alfabeto[numeroAleatorio];
     }
-
     campoSenha.value = senha;
+    classificaSenha(alfabeto.lenght);
+    return senha;
 }
-
+function testarSenha{
+    if (
+        senha.includes
+    )
+}
 geraSenha();
